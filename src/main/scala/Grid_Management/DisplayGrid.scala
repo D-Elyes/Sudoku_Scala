@@ -80,10 +80,11 @@ object  DisplayGrid{
       {
         if(cell.value == correctCell.value)
           {
-            if(cell.state == CellState.CORRECT)
-              print(Console.GREEN+" "+correctCell.value+" "+Console.RESET)
-            else if(cell.state == CellState.INITIATE)
+
+           if(cell.state == CellState.INITIATE)
               print(" "+correctCell.value+" ")
+            else
+             print(Console.GREEN+" "+correctCell.value+" "+Console.RESET)
           }
         else
           print(Console.RED++" "+correctCell.value+" " + Console.RESET)
